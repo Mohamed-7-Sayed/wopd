@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Profile;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Helpers\UploadFile;
 
 class ProfileController extends Controller
 {
+    use UploadFile;
     /**
      * Display a listing of the resource.
      *
@@ -15,8 +17,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        $users = User::get();
-        return view('profile.profile',compact('users'));
+
     }
 
     /**
@@ -37,7 +38,10 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $profiles = Profile::create([
+            'image'  =>  $this->uploadFile($request->Image, 'imgs'),
+        ]);
+        return redirect()->back();
     }
 
     /**
@@ -46,9 +50,11 @@ class ProfileController extends Controller
      * @param  \App\Models\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function show(Profile $profile)
+    public function show($profile)
     {
-        //
+        $user = User::find($profile);
+        $profile = Profile::where('id', $profile)->get();
+        return view('profile.profile',compact('user','profile'));
     }
 
     /**

@@ -53,4 +53,7 @@ class User extends Authenticatable
         return $this->role == 2;
     }
 
+    public function profile() {
+        return $this->hasone(Profile::class,'id','id');
+    }
 }

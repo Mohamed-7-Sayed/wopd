@@ -6,21 +6,31 @@
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col col-lg-9 col-xl-7">
-           @foreach ($users as $user)
+
               <div class="card">
                 <div class="rounded-top text-white d-flex flex-row" style="background-color: #000; height:200px;">
                   <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px;">
-                    <img src="{{ asset('imgs/' . $user->image) }}"
-                      alt="" class="img-fluid img-thumbnail mt-4 mb-2"
-                      style="width: 150px; z-index: 1">
-                    <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
+
+                    @if ($profile->image)
+                            <img src="{{ asset('imgs/' . $profile->image) }}"
+                            alt="" class="img-fluid img-thumbnail mt-4 mb-2"
+                            style="width: 150px; z-index: 1">
+                    @else
+                        <form action="{{ route('profile.store') }}" method="post" enctype="multipart/form-data">
+                            @csrf
+                            <input class="form-control" type="file" name="Image">
+                            <button type="submit" class="btn btn-primary">send</button>
+                        </form>
+                    @endif
+
+                    <button type="button" style="color: #f8f9fa" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
                       style="z-index: 1;">
                       Edit profile
                     </button>
                   </div>
                   <div class="ms-3" style="margin-top: 130px;">
-                    <h5>{{$user->name}}</h5>
-                    <p>{{$user->country}}</p>
+                    <h5>{{ $user->name ?? "N/A" }}</h5>
+                    <p>{{ $user->country ?? "N/A" }}</p>
                   </div>
                 </div>
                 <div class="p-4 text-black" style="background-color: #f8f9fa;">
@@ -75,7 +85,7 @@
                   </div>
                 </div>
               </div>
-           @endforeach
+
         </div>
       </div>
     </div>

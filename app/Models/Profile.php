@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Profile extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'image'
+    ];
+
+    public function UsersProfile() {
+        return $this->hasone(User::class);
+    }
 }

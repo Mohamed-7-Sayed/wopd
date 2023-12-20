@@ -88,7 +88,7 @@
             </div>
 
         </div>
-        <div  class="news-post-user-comment"><a href="{{ url('/' . $page='profile') }}"> <img style="width: 50px"  src="assets/img/team/4.jpg" alt=""> </a></div>
+        <div  class="news-post-user-comment"><a href="{{ url('/' . $page='profile') }}/{{ Auth::user()->id }}"> <img style="width: 50px"  src="assets/img/team/4.jpg" alt=""> </a></div>
     </nav>
     <!-- Slider -->
 
