@@ -54,6 +54,13 @@
                         </div>
 
                         <div class="row mb-3">
+                            <label for="image" class="col-md-4 col-form-label text-md-end">{{ __('Image') }}</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="file" name="Image">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
 
                             <div class="col-md-6">

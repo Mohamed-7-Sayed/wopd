@@ -9,7 +9,7 @@ class Profile extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'image'
+      
     ];
 
     public function UsersProfile() {

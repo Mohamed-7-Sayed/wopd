@@ -38,10 +38,7 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        $profiles = Profile::create([
-            'image'  =>  $this->uploadFile($request->Image, 'imgs'),
-        ]);
-        return redirect()->back();
+       //
     }
 
     /**
@@ -53,8 +50,7 @@ class ProfileController extends Controller
     public function show($profile)
     {
         $user = User::find($profile);
-        $profile = Profile::where('id', $profile)->get();
-        return view('profile.profile',compact('user','profile'));
+        return view('profile.profile',compact('user'));
     }
 
     /**

@@ -4,9 +4,11 @@ use App\Models\Categories;
 use App\Models\Create;
 use App\Models\Procurement;
 use App\Models\User;
+use Mcamara\LaravelLocalization\LaravelLocalization;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization as FacadesLaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,4 +52,11 @@ Route::namespace('App\Http\Controllers')->group(function () {
     Route::resource('photo', 'PhotoController');
     Route::resource('procurement', 'ProcurementController');
     Route::resource('profile', 'ProfileController');
+});
+
+Route::group(['prefix' => FacadesLaravelLocalization::setLocale()], function()
+{
+	Route::get('test',function(){
+		return view('test');
+	});
 });

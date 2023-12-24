@@ -8,9 +8,11 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use App\Helpers\UploadFile;
 
 class RegisterController extends Controller
 {
+    use UploadFile;
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -53,6 +55,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'country' => ['string', 'max:255'],
             'job' => ['string', 'max:255'],
+            'image' => ['string', 'max:255'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
@@ -70,6 +73,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'country' => $data['country'],
             'job' => $data['job'],
+            'image' => $data['Image'],
             'password' => Hash::make($data['password']),
         ]);
     }

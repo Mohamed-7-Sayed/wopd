@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Category;
 use App\Models\Create;
 use Illuminate\Http\Request;
-
+use App\Helpers\UploadFile;
 class CategoryController extends Controller
 {
+    use UploadFile;
     /**
      * Display a listing of the resource.
      *
@@ -39,6 +41,7 @@ class CategoryController extends Controller
     {
         $categories = Category::create([
             'name' => $request->name,
+            'image'  =>  $this->uploadFile($request->Image, 'imgs'),
         ]);
         session()->flash('success', 'category created successfuly');
 

@@ -20,6 +20,14 @@
                         </div>
                      @enderror
                 </div>
+
+                    <div class="card-body">
+                        <div class="input-upload">
+                            <input class="form-control" type="file" name="Image" >
+                        </div>
+                    </div>
+
+
                 <div class="form-group">
                     <button class="btn btn-success">
                         {{ isset($category) ? "Update" : "Add" }}
