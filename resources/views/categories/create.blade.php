@@ -6,7 +6,7 @@
             Add a new Category
         </div>
         <div class="card-body">
-            <form action="{{isset($category) ? route('category.update', $category->id) : route('category.store') }}" method="POST">
+            <form action="{{isset($category) ? route('category.update', $category->id) : route('category.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @if (isset($category))
                     @method('PUT')
@@ -23,7 +23,7 @@
 
                     <div class="card-body">
                         <div class="input-upload">
-                            <input class="form-control" type="file" name="Image" >
+                            <input class="form-control" type="file" name="Images" >
                         </div>
                     </div>
 

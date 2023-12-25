@@ -41,7 +41,7 @@ class CategoryController extends Controller
     {
         $categories = Category::create([
             'name' => $request->name,
-            'image'  =>  $this->uploadFile($request->Image, 'imgs'),
+            'images'  =>  $this->uploadFile($request->Images, 'images'),
         ]);
         session()->flash('success', 'category created successfuly');
 

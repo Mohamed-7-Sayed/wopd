@@ -10,7 +10,7 @@ class Category extends Model
     use HasFactory;
     protected $fillable = [
         'name',
-        'image'
+        'images'
 ];
 
 //public function create_design() {
