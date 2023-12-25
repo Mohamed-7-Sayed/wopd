@@ -73,7 +73,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'country' => $data['country'],
             'job' => $data['job'],
-            'image' => $this->uploadFile($data['Image'], 'imgs'), // comment update
+            'image' => $this->uploadFile($data['Image'], 'imgs'),
             'password' => Hash::make($data['password']),
         ]);
     }
