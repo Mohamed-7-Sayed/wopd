@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DesignerRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -25,7 +26,9 @@ class AdminController extends Controller
      */
     public function index()
     {
+        $designers_request = DesignerRequest::get();
         $users = User::get();
-        return view('admin.dashboard',compact('users'));
+        return view('admin.dashboard',compact('users','designers_request'));
     }
+
 }

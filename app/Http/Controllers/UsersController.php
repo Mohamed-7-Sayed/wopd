@@ -18,4 +18,8 @@ class UsersController extends Controller
         return redirect(route('users'));
       }
 
+      public function DesginerRequest(Request $request) {
+        dd($request);
+        return redirect(route('users'));
+      }
 }

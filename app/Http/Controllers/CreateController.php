@@ -50,7 +50,6 @@ class CreateController extends Controller
             'category_id' => $request->category_id,
             'Created_by' => Auth::user() -> id,
         ]);
-        session()->flash('Add', 'تم اضافة المنتج بنجاح ');
         return redirect(route('create.index'));
     }
 

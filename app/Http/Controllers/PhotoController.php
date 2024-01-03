@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Create;
 use App\Models\Photo;
 use App\Models\Procurement;
@@ -51,7 +52,9 @@ class PhotoController extends Controller
     {
         $create = Create::find($photo);
         $procurement = Procurement::get();
-        return view('photo.photo',compact('create','procurement'));
+        $category = Category::find($photo);
+        $creates = Create::where('category_id', $photo)->get();
+        return view('photo.photo',compact('create','procurement','category','creates'));
     }
 
 

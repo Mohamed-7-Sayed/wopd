@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../../../../css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
     <link rel="stylesheet" href="/assets/css/plugins.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -31,9 +30,9 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <!-- Logo -->
-            <div class="logo-wrapper">
-                <a class="logo" href="index.html"> <img src="assets/img/logo.png" class="logo-img" alt=""> </a>
-                <!-- <a class="logo" href="index.html"> <h2>Phoxel <span>Photography</span></h2> </a> -->
+            <div class="logo-wrapper col-lg-6 col-md-4 col-sm-3">
+                <a class="logo" href="index.html"> <img src="/assets/img/pngegg.png" style="margin-left: -85px; width: 115px;" class="logo-img" alt=""> </a>
+                 <a class="logo" href="index.html"> <h2>Wopd <span>Photographers & Designers</span></h2> </a>
             </div>
             <!-- Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
@@ -81,16 +80,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Designer Membership Request</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-
             </div>
-
         </div>
-        <div  class="news-post-user-comment"><a href="{{ url('/' . $page='profile') }}/{{ Auth::user()->id }}"> <img style="width: 50px"  src="assets/img/team/4.jpg" alt=""> </a></div>
     </nav>
-    <!-- Slider -->
 
 
 

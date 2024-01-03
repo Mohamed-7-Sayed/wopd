@@ -52,11 +52,14 @@ Route::namespace('App\Http\Controllers')->group(function () {
     Route::resource('photo', 'PhotoController');
     Route::resource('procurement', 'ProcurementController');
     Route::resource('profile', 'ProfileController');
+    Route::resource('ImagesCategory', 'ImagesCategoryController');
+    Route::resource('team', 'TeamController');
+    Route::resource('DesignerRequest', 'DesignerRequestController');
 });
 
-Route::group(['prefix' => FacadesLaravelLocalization::setLocale()], function()
-{
-	Route::get('test',function(){
-		return view('test');
-	});
+
+
+
+Route::namespace('App\Http\Controllers')->group(function () {
+    Route::post('/users/{user}/designer-request', 'UsersController@DesignerRequest')->name('users.designer-request');
 });

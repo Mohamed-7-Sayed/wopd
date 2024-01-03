@@ -30,16 +30,13 @@
     </div>
   </div>
 
-<section class="banner-header banner-img banner-img-top section-padding valign bg-img bg-fixed" data-overlay-darkgray="1" data-background="assets/img/banner/7.jpg">
+<section class="banner-header banner-img banner-img-top section-padding valign bg-img bg-fixed" data-overlay-darkgray="1" data-background="/assets/img/banner/1.jpg">
     <div class="container">
         <div class="row">
             <div class="col-md-9">
                 <div class="news-post-categorydate-wrapper">
-                     <a href="blog.html"><div>Resources</div></a>
-                     <div class="news-post-categorydate-divider"></div>
-                     <div>Dec 14, 2024</div>
                 </div>
-                <h1>Cosina announces its fastest full-frame lens, the Nokton 50mm</h1>
+                <h1>Buy the picture then upload it</h1>
             </div>
         </div>
     </div>
@@ -50,53 +47,48 @@
             <div class="row">
                 <div class="col-md-12">
                     <img src="{{ asset('imgs/' . $create->image) }}" class="mb-30" alt="">
-                    <h1>{{$create->title}}</h1><div style="text-align: right">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> Buy     <h5> </h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back-fill" viewBox="0 0 16 16">
+                    <svg style="margin-left: 483px; margin-top: -695px; color:aliceblue" xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="currentColor" class="bi bi-file-earmark-lock" viewBox="0 0 16 16">
+                        <path d="M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0M7 7v1h2V7a1 1 0 0 0-2 0M6 9.3v2.4c0 .042.02.107.105.175A.637.637 0 0 0 6.5 12h3a.64.64 0 0 0 .395-.125c.085-.068.105-.133.105-.175V9.3c0-.042-.02-.107-.105-.175A.637.637 0 0 0 9.5 9h-3a.637.637 0 0 0-.395.125C6.02 9.193 6 9.258 6 9.3"/>
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                      </svg>
+                    <h2>{{$create->title}} <div style="text-align: center"><button  type="button" class="btn btn-primary" style="margin-top: -114px">Download</button></div></h2><p>{{$create->description}}</p><div style="text-align: right">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="margin-top: -332px; height: 60px"> Buy     <h5> </h5><svg xmlns="http://www.w3.org/2000/svg" style="margin-top: -47px" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back-fill" viewBox="0 0 16 16">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1z"/>
                       </svg></button></div>
-                      <div style="text-align: center"><button  type="button" class="btn btn-primary">Download</button></div>
-
-
-
                         <!-- Modal -->
 
-                      <h1> </h1>
-                    <p>{{$create->description}}</p>
                 </div>
-            </div>
-            <div class="news-comment-section">
-            <div class="row">
-
-                    <!-- Comment -->
-                    <div class="col-md-7">
-                        <div class="news-post-comment-wrap">
-                            <div class="news-post-user-comment"> <img src="assets/img/team/4.jpg" alt=""> </div>
-                            <div class="news-post-user-content">
-                                <h3>Betty Misse &nbsp;&nbsp;<span>29 Dec 2024</span></h3>
-                                <p>Photography ultricies nibh non dolor maximus sceleue inte molliser faubs neque nec tincidunte aliquam erat tempore. </p> <a class="news-post-repay" href="#">Reply<i class="ti-back-left"></i></a> </div>
-                        </div>
-                    </div>
-                    <!-- Contact Form -->
-                    <div class="col-md-5">
-                        <h3>Leave a Reply</h3>
-                        <form method="post" class="row">
-                            <div class="col-md-12">
-                                <input type="text" name="name" id="name" placeholder="Full Name *" required=""> </div>
-                            <div class="col-md-12">
-                                <input type="email" name="email" id="email" placeholder="Email Address *" required=""> </div>
-                            <div class="col-md-12">
-                                <textarea name="message" id="message" cols="40" rows="4" placeholder="Your Comment *" required=""></textarea>
-                            </div>
-                            <div class="col-md-12">
-                                <button class="button-fourth mt-15"><a href="#0"><span>Send Comment</span></a></button>
-                            </div>
-                        </form>
-                    </div>
-            </div>
             </div>
         </div>
     </section>
-
+ <!-- Portfolio Gallery -->
+ <section class="section-padding bg-blck">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 text-left">
+                <h2 class="section-title"><span>Similar Pictures</span></h2>
+                <hr class="border-1">
+            </div>
+        </div>
+        <div class="row gallery-items">
+            @foreach ($creates as $create)
+                <div class="col-md-4 gallery-masonry-wrapper single-item wedding">
+                    <a  href="{{ url('/' . $page='photo') }}/{{ $create->id }}"  class="gallery-masonry-item-img-link " tabindex="0">
+                        <div class="gallery-box">
+                            <div class="gallery-img"> <img src="{{ asset('imgs/' . $create->image) }}" class="img-fluid mx-auto d-block"  alt=""> </div>
+                            <div class="gallery-masonry-item-img"></div>
+                            <div class="gallery-masonry-item-content">
+                                <div class="gallery-masonry-item-category">{{$create->category->name}}</div>
+                                <h4 class="gallery-masonry-item-title">{{$create->title}}</h4>
+                                <h4 class="gallery-masonry-item-title">${{$create->price}}</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
 
 <script>
 

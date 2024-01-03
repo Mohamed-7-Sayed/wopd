@@ -13,7 +13,7 @@ class Category extends Model
         'images'
 ];
 
-//public function create_design() {
-  //  return $this->hasone(Create::class,'id','category_id');
-//}
+public function categories() {
+    return $this->hasone(ImagesCategory::class,'id','id');
+}
 }

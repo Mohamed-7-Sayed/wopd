@@ -8,7 +8,7 @@
  06. Header style
  07. Slider style
  08. Banner Header style
- 09. About style 
+ 09. About style
  10. About info style
  11. Team style
  12. Services style
@@ -33,7 +33,7 @@
  31. toTop Button style
  32. Responsive (Media Query)
  33. Overlay Effect Bg image
- 
+
 ----------------------------------------------------------------------------------- */
 
 
@@ -503,7 +503,7 @@ hr.border-2 {
 .owl-carousel .owl-nav button.owl-next, 
 .owl-carousel .owl-nav button.owl-prev, 
 .owl-carousel button.owl-dot {
-    outline: none;
+   outline: none;
 }
 
 
@@ -716,7 +716,7 @@ hr.border-2 {
     font-size: 8px;
     float: right;
     color: #777;
-    
+
 }
 .navbar .dropdown-menu .dropdown:hover > .dropdown-item,
 .navbar .dropdown-menu .dropdown-item.active,
@@ -767,7 +767,7 @@ hr.border-2 {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
-    }    
+    }
 }
 @media screen and (max-width: 991px) {
     .navbar {
@@ -833,7 +833,7 @@ hr.border-2 {
     }
     .nav-scroll .navbar-collapse .active {
         color: #1b1b1b !important;
-    } 
+    }
     .navbar .dropdown-menu .dropdown-item {
         padding: 0 15px;
         font-size: 16px;
@@ -1149,7 +1149,7 @@ hr.border-2 {
   flex-direction: column;
   justify-content: center;
   align-items: right;
-    
+
 }
 .video-lauch-wrapper {
   border: none;
@@ -1694,7 +1694,7 @@ hr.border-2 {
     height: 45px;
     margin-bottom: 20px;
 }
-.services .item:hover p { 
+.services .item:hover p {
     color: #777;
 }
 .border-01 {
@@ -2113,7 +2113,7 @@ hr.border-2 {
     -webkit-box-ordinal-group: 2 !important;
         -ms-flex-order: 1 !important;
             order: 1 !important;
-  }  
+  }
 }
 @media screen and (max-width: 480px) {
     .services3 .content {
@@ -2172,7 +2172,7 @@ hr.border-2 {
 .price-box .price-box-inner ul li.pricing-prices .pricing-dolar {
     position: relative;
     bottom: 2px;
-    color: #fff; 
+    color: #fff;
     font-size: 16px;
     line-height: 1em;
     font-weight: 400;
@@ -2241,7 +2241,7 @@ hr.border-2 {
 .pricing2 .price {
     margin: 0;
     padding: 0;
-    display: block; 
+    display: block;
     margin-bottom: 20px;
 }
 .pricing2 .price sup {
@@ -2272,10 +2272,10 @@ hr.border-2 {
     padding-bottom: 15px;
     font-family: 'Jost', serif;
 }
-.pricing2 .pricing-text, 
+.pricing2 .pricing-text,
 .pricing2 .pricing-text li {
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 .pricing2 .pricing-text li {
     list-style: none;
@@ -2521,7 +2521,7 @@ hr.border-2 {
   transition: -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), 
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
   -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-masonry-wrapper .gallery-masonry-item-title {
@@ -3118,7 +3118,7 @@ button.mfp-arrow {
     display: flex;
     color: #777;
     text-decoration: none;
-    
+
 }
 .contact-link-icon {
     width: 52px;
@@ -3186,7 +3186,7 @@ button.mfp-arrow {
   color: #1b1b1b;
   line-height: 20px;
   font-weight: 400;
-  text-align: center; 
+  text-align: center;
   margin-right: 10px;
 }
 .button-primary:hover {
@@ -3408,7 +3408,7 @@ button.mfp-arrow {
     position: absolute;
     left: 0;
     top: 12px;
-} 
+}
 .footer .usful-links ul li a:hover {
     color: #fff;
 }
@@ -3820,7 +3820,7 @@ button.mfp-arrow {
         font-size: 16px;
         margin-right: 10px;
     }
-    
+
     .video-fullscreen-wrap h1 {
         font-size: 36px;
     }

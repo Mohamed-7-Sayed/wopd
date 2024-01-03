@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Create;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,6 +27,8 @@ class HomeController extends Controller
     public function index()
     {
         $creates = Create::get();
-        return view('home',compact('creates'));
+        $categories = Category::get();
+        $users = User::where('role',2)->get();
+        return view('home',compact('creates','categories','users'));
     }
 }
