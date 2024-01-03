@@ -57,9 +57,6 @@ Route::namespace('App\Http\Controllers')->group(function () {
     Route::resource('DesignerRequest', 'DesignerRequestController');
 });
 
-
-
-
 Route::namespace('App\Http\Controllers')->group(function () {
-    Route::post('/users/{user}/designer-request', 'UsersController@DesignerRequest')->name('users.designer-request');
+    Route::post('/users/{user}/designer-request', 'UsersController@DesginerRequest')->name('users.designer-request');
 });
