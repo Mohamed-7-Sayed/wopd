@@ -19,7 +19,7 @@ class UsersController extends Controller
       }
 
       public function DesginerRequest(Request $request) {
-        dd($request);
+        dd($request->all());
         return redirect(route('users'));
       }
 }
